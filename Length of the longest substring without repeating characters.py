@@ -11,31 +11,53 @@
 # Explanation: The longest substrings without repeating characters are “EKSFORG” and “KSFORGE”, with lengths of 7
 
 
-
+#Thought of a better approach that does not require 3 FOR LOOPS with reduced extra memory usage
 str="GEEKSFORGEEKS"
-
+temp=""
 y=len(str)
-empty=[]
 for i in range(y):
     for j in range(i+1,y+1):
         t=(str[i:j])
-        if len(t)==len(set(t)):
-            empty.append(t)
-
-
-
-
-temp=""
-for i in empty:
-    if len(i)>len(temp):
-        temp=i
+        if len(t)==len(set(t)) and len(t)>len(temp):
+            temp=t
 
 print(len(temp))
 
 
-for i in empty:
-    if len(i)==len(temp):
-        print(i)
+
+
+
+
+
+#OLD APPROACH
+
+# y=len(str)
+# empty=[]
+# for i in range(y):
+#     for j in range(i+1,y+1):
+#         t=(str[i:j])
+#         if len(t)==len(set(t)):
+#             empty.append(t)
+
+
+
+
+# temp=""
+# for i in empty:
+#     if len(i)>len(temp):
+#         temp=i
+
+# print(len(temp))
+
+
+# for i in empty:
+#     if len(i)==len(temp):
+#         print(i)
+
+
+
+
+
 
 
 
