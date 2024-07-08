@@ -156,3 +156,55 @@ for i in range(5,0,-1):
     print(" * "*(i))
 
 print("\n")
+
+
+
+#   * 
+#     * 
+#       * 
+#     * 
+#   * 
+#    *
+#     *
+#   * 
+#     * 
+#       * 
+#   *
+#     *
+#       *
+#     *
+#   *
+#    *
+#     *
+#   *
+#     *
+#       *
+#   *
+#     *
+#       *
+#     *
+#   *
+#    *
+#     *
+#   *
+#     *
+#       *
+
+
+
+n=3
+
+for x in range(n):
+    for i in range(3):
+        print("  "*i," * ")
+
+    for i in range(1,-1,-1):
+        print("  "*i," * ")
+    
+    for i in range(2):
+        print(" "," "*(i),"*")
+
+    for i in range(3):
+        print("  "*i," * ")
+
+print("\n)
