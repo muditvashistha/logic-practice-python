@@ -20,7 +20,7 @@
 # Explanation: 13 and 12 don’t have any element greater than them present on the right side
 
 
-x=[11, 13, 21, 3]
+x=[123,256,45,90]
 for i in range(len(x)):
     greatest=-1
     for j in range(i+1,len(x)):
