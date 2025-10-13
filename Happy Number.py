@@ -32,11 +32,11 @@ if x==1:
 else:
     while num not in check:
         check.append(num)
-        sum=0
+        sums=0
         for i in num:
-            sum=sum+(int(i)**2)
+            sums=sums+ (int(i))**2
         num=str(sum)
-        if sum==1:
+        if sums==1:
             print(True)
             break
     if num in check:
@@ -47,6 +47,7 @@ else:
     
     
   
+
 
 
 
