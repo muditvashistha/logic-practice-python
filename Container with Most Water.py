@@ -43,3 +43,29 @@ while(left<right):
 
 print(greatest_area)
 
+
+
+
+
+# class Solution(object):
+#     def maxArea(self, height):
+#         x = len(height)
+#         l = 0
+#         r = x - 1
+#         max_area = 0
+
+#         while l < r:
+#             w = r - l
+#             h = min(height[l] , height[r])
+#             area = w * h
+#             max_area = max(max_area , area)
+
+#             if height[l] < height[r]:
+#                 l = l + 1
+#             else:
+#                 r = r - 1
+#         return max_area
+
+        
+
+
